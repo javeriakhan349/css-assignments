@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+
+.header {
+    height: 75px;
+    width: 100%;
+    background: #171717;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    width: 220px;
+}
+
+.logo span {
+    color: #ff9f1c;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9f1c;
+}
+
+.notification {
+    margin-left: auto;
+    font-size: 23px;
+    position: relative;
+    cursor: pointer;
+}
+
+.notification span {
+    position: absolute;
+    top: -8px;
+    right: -9px;
+    background: #ff3b30;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 210px;
+    height: calc(100vh - 75px);
+    background: #222;
+    padding: 30px 20px;
+}
+
+.sidebar h3 {
+    color: #ff9f1c;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #ff9f1c;
+    color: #111;
+}
+
+
+.main-content {
+    margin-left: 210px;
+    padding-top: 75px;
+}
+
+.hero {
+    min-height: 300px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=1400");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+
+.profile {
+    background: white;
+    padding: 35px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.profile img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    margin-right: 25px;
+    border-radius: 8px;
+}
+
+.profile-text h2 {
+    margin-bottom: 12px;
+}
+
+.profile-text p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
+.cards-section {
+    padding: 10px 30px 40px;
+}
+
+.cards-section > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.card img {
+    width: 110px;
+    height: 95px;
+    object-fit: cover;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+}
+
+.card h3 {
+    padding-top: 5px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+.new {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff9f1c;
+    color: #111;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 9px;
+    border-radius: 4px;
+}
+
+
+
+
+.offers {
+    background: #171717;
+    color: white;
+    margin: 10px 30px 40px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.offers h2 {
+    color: #ff9f1c;
+    margin-bottom: 10px;
+}
+
+.offers p {
+    margin-bottom: 20px;
+}
+
+button {
+    background: #ff9f1c;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #fff;
+}
+
+
+
+.contact {
+    background: white;
+    margin: 0 30px 40px;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+
+.advertisement {
+    position: fixed;
+    right: 20px;
+    top: 45%;
+    width: 170px;
+    padding: 18px;
+    background: #ff9f1c;
+    color: #111;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 900;
+}
+
+.advertisement span {
+    font-size: 9px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.advertisement h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+.advertisement p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.advertisement button {
+    background: #171717;
+    color: white;
+    width: 100%;
+    font-size: 11px;
+}
+
+
+.go-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background: #171717;
+    color: #ff9f1c;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.go-top:hover {
+    background: #ff9f1c;
+    color: #111;
+}
+
+
+
+.footer {
+    margin-left: 210px;
+    background: #171717;
+    color: #aaa;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.footer h3 {
+    color: #ff9f1c;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 7px 0;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 20px !important;
+}
+
+
+
+@media (max-width: 950px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advertisement {
+        display: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .logo {
+        width: auto;
+        margin-right: auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .footer {
+        margin-left: 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .profile img {
+        width: 130px;
+        height: 120px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
