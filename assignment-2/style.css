@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #172033;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7b8497;
+    margin-bottom: 35px;
+}
+
+
+
+.table-box {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(31, 45, 61, 0.10);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+
+
+thead {
+    background: #172033;
+    color: white;
+}
+
+th {
+    padding: 18px 15px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+
+
+
+
+tbody tr {
+    border-bottom: 1px solid #edf0f5;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 18px 15px;
+    color: #4c566a;
+    font-size: 14px;
+}
+
+
+
+tbody tr:hover {
+    background: #f7f7ff;
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.08);
+}
+
+
+
+
+.pass,
+.warning {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+}
+
+.pass {
+    background: #e9f9f0;
+    color: #1c9b59;
+}
+
+.warning {
+    background: #fff4dc;
+    color: #c58618;
+}
+
+
+
+
+
