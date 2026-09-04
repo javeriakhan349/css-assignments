@@ -1,0 +1,74 @@
+
+body {
+background-color: hsl(210, 50%, 94%);
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+
+header {
+padding-top: 60px;
+text-align: center;
+}
+
+h1 {
+color: navy;
+font-family: Georgia, serif;
+font-size: 48px;
+font-weight: bold;
+letter-spacing: 3px;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 50px;
+}
+
+.content-container {
+display: flex;
+justify-content: center;
+align-items: stretch;
+gap: 25px;
+padding: 20px 50px;
+}
+
+
+.content-block {
+width: 30%;
+padding: 25px;
+border-radius: 12px;
+line-height: 1.8;
+text-align: center;
+font-size: 18px;
+box-sizing: border-box;
+}
+
+
+.block-one {
+color: hsl(280, 70%, 35%);
+background-color: white;
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+line-height: 1.8;
+letter-spacing: 1px;
+}
+
+.block-two {
+color: rgb(20, 100, 80);
+background-color: white;
+font-family: "Trebuchet MS", sans-serif;
+font-size: 19px;
+font-weight: 600;
+line-height: 2;
+letter-spacing: 0.5px;
+}
+
+.block-three {
+color: #c0392b;
+background-color: white;
+font-family: "Courier New", monospace;
+font-size: 17px;
+font-weight: bold;
+line-height: 1.9;
+letter-spacing: 1px;
+}
